@@ -60,10 +60,11 @@ public class MatrixMultiplication {
 
         System.out.println("Product of two matrix  is ");
 
-        for (int i = 0; i < r1; i++) {
-            for (int j = 0; j < c2; j++) {
+        for (int i = 0; i < r1; i++) { //row number
+            for (int j = 0; j < c2; j++) { //column number
                 ans[i][j] = 0;
-                for (int k = 0; k < c2; k++) {
+                for (int k = 0; k < c1; k++) {
+//                    ans[i][j] = ith row of arr1 * jth column of arr2
                     ans[i][j] += arr1[i][k] * arr2[k][j];
                 }
                 System.out.print(ans[i][j] + " ");

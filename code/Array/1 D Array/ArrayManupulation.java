@@ -16,7 +16,7 @@ public class ArrayManupulation {
 
             }
             }
-        for(int i = 0; i < n; i++){
+          for(int i = 0; i < n; i++){
             if( arr[i] != -1){
                 res = arr[i];
             }
